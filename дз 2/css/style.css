@@ -1,0 +1,37 @@
+body {
+    background: rgb(71, 71, 71);
+}
+
+.text {
+    color: white;
+    font-size: 90px;
+    text-align: center;
+}
+
+
+.block::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: red;  
+    border-radius: 80px;  
+    transform: translate(300px, 89px);
+    border: width 100%;
+    border-color: white;
+    border-style: solid;
+
+}
+
+.block::after {
+        content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: red;  
+    border-radius: 80px;  
+    transform: translate(1000px, -95px);
+        border: width 100%;
+    border-color: white;
+    border-style: solid;
+}
