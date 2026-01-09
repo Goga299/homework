@@ -1,0 +1,19 @@
+body {
+    font-family: "Inter28pt", "ReadexPro" sans-serif;
+    line-height: 1.5;
+    background: white;
+    color: black;
+}
+.wrapper {
+    margin-bottom: 0px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    max-width: 1324px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
