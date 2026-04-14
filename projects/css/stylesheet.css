@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'DM Sans 18pt';
+    src: local('DM Sans 18pt Regular'), local('DMSans18pt-Regular'),
+        url('..//fonts/DMSans18pt-Regular.woff2') format('woff2'),
+        url('..//fonts/DMSans18pt-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans 18pt';
+    src: local('DM Sans 18pt Bold'), local('DMSans18pt-Bold'),
+        url('..//fonts/DMSans18pt-Bold.woff2') format('woff2'),
+        url('..//fonts/DMSans18pt-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
