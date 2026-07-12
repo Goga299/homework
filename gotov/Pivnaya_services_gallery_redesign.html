@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Студия эпиляции Анны Деденко — Анапа</title>
+<meta name="description" content="Студия и школа эпиляции Анны Деденко в Анапе: лазер, шугаринг, воск, электроэпиляция. Рейтинг 5.0, 158 отзывов. Запись по телефону и в WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FAF6F0;
+    --bg-soft:#F4EBDD;
+    --card:#FFFDFC;
+    --card-hi:#EFE1CF;
+    --line:rgba(90,65,40,0.14);
+    --ivory:#3B3027;
+    --ivory-dim:#7A6A5A;
+    --gold:#B8844F;
+    --coral:#C68A46;
+    --sea:#A98255;
+    --sea-deep:#8A5A3B;
+    --radius:18px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    background-image:radial-gradient(rgba(120,80,40,0.04) 1px, transparent 1px);
+    background-size:24px 24px;
+    color:var(--ivory);
+    font-family:'Manrope', sans-serif;
+    font-size:20px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    margin:0;
+    letter-spacing:-0.01em;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .mono{font-family:'Space Mono', monospace;}
+  .wrap{
+    max-width:1140px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+  .eyebrow{
+    font-family:'Space Mono', monospace;
+    text-transform:uppercase;
+    letter-spacing:0.16em;
+    font-size:12px;
+    color:var(--gold);
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:22px;height:1px;
+    background:var(--gold);
+    display:inline-block;
+  }
+
+  /* ---------- HEADER ---------- */
+  header{
+    position:sticky;
+    top:0;
+    z-index:50;
+    backdrop-filter:blur(10px);
+    background:rgba(250,246,240,0.88);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:16px 0;
+  }
+  .brand{
+    font-family:'Fraunces', serif;
+    font-size:18px;
+    letter-spacing:0.02em;
+  }
+  .brand span{color:var(--gold); font-style:italic;}
+  .nav-links{
+    display:flex;
+    gap:28px;
+    font-size:16px;
+    color:var(--ivory-dim);
+  }
+  .nav-links a:hover{color:var(--ivory);}
+  .nav-cta{
+    display:flex;
+    align-items:center;
+    gap:14px;
+  }
+  .phone-link{
+    font-size:16px;
+    color:var(--ivory-dim);
+    display:none;
+  }
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:11px 22px;
+    border-radius:999px;
+    font-size:16px;
+    font-weight:600;
+    white-space:nowrap;
+    transition:transform .25s ease, box-shadow .25s ease, background .25s ease;
+  }
+  .btn-primary{
+    background:var(--coral);
+    color:#2D241D;
+  }
+  .btn-primary:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 24px -8px rgba(226,115,90,0.55);
+  }
+  .btn-ghost{
+    border:1px solid var(--line);
+    color:var(--ivory);
+  }
+  .btn-ghost:hover{border-color:var(--sea); color:var(--sea);}
+
+  /* ---------- HERO ---------- */
+  /* .hero{
+    position:relative;
+    padding: 20px 0 40px;
+    overflow:hidden;
+    display: grid;
+  } */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;      /* центр по вертикали */
+    justify-content: center;  /* центр по горизонтали */ 
+  }
+  .hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+      radial-gradient(60% 50% at 82% 8%, rgba(217,161,91,0.16), transparent 60%),
+      radial-gradient(50% 40% at 10% 90%, rgba(111,168,158,0.14), transparent 60%);
+    pointer-events:none;
+  }
+  .hero-inner{
+    position:relative;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    grid-template-columns:1.15fr 0.85fr;
+    gap:56px;
+  }
+  .rating-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:9px 16px 9px 10px;
+    border:1px solid var(--line);
+    border-radius:999px;
+    font-size:15px;
+    color:var(--ivory-dim);
+    margin-bottom:26px;
+  }
+  .rating-badge .stars{color:var(--gold); font-size:16px; letter-spacing:1px;}
+  .rating-badge b{color:var(--ivory);}
+  h1.headline{
+    font-size:clamp(44px, 6vw, 76px);
+    line-height:1.05;
+    margin-bottom:22px;
+  }
+  h1.headline em{
+    font-style:italic;
+    color:var(--gold);
+  }
+  .hero p.lede{
+    font-size:18px;
+    color:var(--ivory-dim);
+    max-width:480px;
+    margin-bottom:34px;
+  }
+  .hero-ctas{
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+    margin-bottom:40px;
+  }
+  .quick-facts{
+    display:flex;
+    gap:28px;
+    flex-wrap:wrap;
+    font-size:15px;
+    color:var(--ivory-dim);
+  }
+  .quick-facts div{display:flex; align-items:center; gap:8px;}
+  .quick-facts .dot{width:6px; height:6px; border-radius:50%; background:var(--sea); flex:none;}
+
+  /* hero visual: layered "smoothing" wave motif */
+  .hero-visual{
+    position:relative;
+    aspect-ratio:1/1.05;
+    border-radius:28px;
+    background:linear-gradient(160deg, var(--card-hi), var(--bg-soft) 70%);
+    border:1px solid var(--line);
+    overflow:hidden;
+  }
+  .hero-visual svg{position:absolute; inset:0; width:100%; height:100%;}
+  .hero-visual .badge-float{
+    position:absolute;
+    left:20px; bottom:20px;
+    right:20px;
+    background:rgba(255,253,250,0.88);
+    backdrop-filter:blur(6px);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:16px 18px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:15px;
+  }
+  .badge-float .n{font-family:'Fraunces', serif; font-size:22px; color:var(--gold);}
+
+  /* wave divider — signature element */
+  .wave-divider{
+    display:block;
+    width:100%;
+    height:90px;
+    margin-top:-2px;
+  }
+
+  /* ---------- SECTION SHARED ---------- */
+  section{padding:88px 0;}
+  .section-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:24px;
+    margin-bottom:48px;
+    flex-wrap:wrap;
+  }
+  .section-head h2{
+    font-size:clamp(34px,4vw,48px);
+    margin-top:14px;
+    max-width:560px;
+  }
+  .section-head p{color:var(--ivory-dim); max-width:360px; font-size:15px;}
+
+  /* ---------- ABOUT ---------- */
+  .about{
+    background:var(--bg-soft);
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+  .about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:56px;
+    align-items:start;
+  }
+  .about-grid p{color:var(--ivory-dim); font-size:16px; margin-bottom:16px;}
+  .award-strip{
+    display:flex;
+    gap:16px;
+    margin-top:28px;
+    flex-wrap:wrap;
+  }
+  .award-chip{
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:14px 18px;
+    font-size:15px;
+    color:var(--ivory-dim);
+    flex:1;
+    min-width:160px;
+  }
+  .award-chip b{
+    display:block;
+    font-family:'Fraunces', serif;
+    font-size:20px;
+    color:var(--ivory);
+    margin-bottom:4px;
+  }
+
+  /* ---------- SERVICES ---------- */
+  .services-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:18px;
+  }
+  .service-card{
+    position:relative;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:26px 26px 22px;
+    overflow:hidden;
+    transition:border-color .3s ease, transform .3s ease;
+  }
+  .service-card:hover{
+    border-color:var(--gold);
+    transform:translateY(-3px);
+  }
+  .service-card::after{
+    content:"";
+    position:absolute;
+    right:-40px; top:-40px;
+    width:120px; height:120px;
+    border-radius:50%;
+    background:radial-gradient(circle, rgba(217,161,91,0.16), transparent 70%);
+    opacity:0;
+    transition:opacity .3s ease;
+  }
+  .service-card:hover::after{opacity:1;}
+  .service-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-bottom:14px;
+  }
+  .service-card h3{font-size:19px; max-width:200px;}
+  .price{
+    font-family:'Space Mono', monospace;
+    font-size:17px;
+    color:var(--gold);
+    white-space:nowrap;
+  }
+  .service-card p{color:var(--ivory-dim); font-size:16px; margin:0;}
+  .services-note{
+    margin-top:22px;
+    font-size:16px;
+    color:var(--ivory-dim);
+    border-left:2px solid var(--sea);
+    padding-left:16px;
+  }
+  .services-note a{color:var(--sea); text-decoration:underline; text-underline-offset:3px;}
+
+  /* ---------- FEATURES ---------- */
+  .features{background:var(--bg-soft); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .features-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    overflow:hidden;
+  }
+  .feature-item{
+    background:var(--bg-soft);
+    padding:26px 20px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .feature-item svg{width:22px; height:22px; color:var(--sea);}
+  .feature-item span{font-size:15px; color:var(--ivory-dim);}
+
+  /* ---------- REVIEWS ---------- */
+  .reviews-layout{
+    display:grid;
+    grid-template-columns:0.8fr 1.2fr;
+    gap:48px;
+  }
+  .rating-summary{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:30px;
+    align-self:start;
+  }
+  .rating-summary .big{
+    font-family:'Fraunces', serif;
+    font-size:56px;
+    color:var(--gold);
+    line-height:1;
+  }
+  .rating-summary .stars{color:var(--gold); letter-spacing:2px; margin:10px 0 6px;}
+  .rating-summary .count{color:var(--ivory-dim); font-size:15px; margin-bottom:26px;}
+  .bar-row{margin-bottom:14px;}
+  .bar-row .labels{
+    display:flex;
+    justify-content:space-between;
+    font-size:14px;
+    color:var(--ivory-dim);
+    margin-bottom:6px;
+  }
+  .bar-track{
+    height:5px;
+    border-radius:3px;
+    background:rgba(243,236,225,0.1);
+    overflow:hidden;
+  }
+  .bar-fill{
+    height:100%;
+    background:linear-gradient(90deg, var(--sea-deep), var(--sea));
+    border-radius:3px;
+  }
+  .review-cards{display:flex; flex-direction:column; gap:16px;}
+  .review-card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:24px;
+  }
+  .review-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:12px;
+  }
+  .review-head .who{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:16px;
+    font-weight:600;
+  }
+  .avatar{
+    width:34px; height:34px;
+    border-radius:50%;
+    background:linear-gradient(135deg, var(--gold), var(--coral));
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Fraunces', serif;
+    color:#2D241D;
+    font-size:16px;
+  }
+  .review-head .date{font-size:14px; color:var(--ivory-dim);}
+  .review-card p{color:var(--ivory-dim); font-size:16px; margin:0;}
+  .review-tag{
+    display:inline-block;
+    margin-top:12px;
+    font-family:'Space Mono', monospace;
+    font-size:11px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--sea);
+    border:1px solid var(--sea-deep);
+    padding:4px 10px;
+    border-radius:999px;
+  }
+
+  /* ---------- CONTACT ---------- */
+  .contact{
+    background:var(--bg-soft);
+    border-top:1px solid var(--line);
+  }
+  .contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:56px;
+    align-items:center;
+  }
+  .contact-list{list-style:none; padding:0; margin:0 0 30px;}
+  .contact-list li{
+    display:flex;
+    gap:16px;
+    padding:16px 0;
+    border-bottom:1px solid var(--line);
+    font-size:15px;
+  }
+  .contact-list li:last-child{border-bottom:none;}
+  .contact-list svg{width:20px; height:20px; color:var(--gold); flex:none; margin-top:2px;}
+  .contact-list .label{color:var(--ivory-dim); font-size:14px; display:block; margin-bottom:3px; text-transform:uppercase; letter-spacing:0.06em;}
+  .social-row{display:flex; gap:12px; margin-top:8px;}
+  .social-row a{
+    width:42px; height:42px;
+    border:1px solid var(--line);
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    transition:border-color .25s ease, color .25s ease;
+  }
+  .social-row a:hover{border-color:var(--sea); color:var(--sea);}
+  .map-card{
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:0;
+    aspect-ratio:4/3.2;
+    position:relative;
+    overflow:hidden;
+    background:linear-gradient(160deg, var(--card-hi), var(--bg) 75%);
+  }
+  .map-card svg{position:absolute; inset:0; width:100%; height:100%;}
+  .map-card .pin{
+    position:absolute;
+    left:50%; top:50%;
+    transform:translate(-50%,-60%);
+    display:flex; flex-direction:column; align-items:center;
+    gap:6px;
+  }
+  .map-card .pin .dot{
+    width:16px; height:16px;
+    background:var(--coral);
+    border-radius:50% 50% 50% 0;
+    transform:rotate(-45deg);
+    box-shadow:0 0 0 6px rgba(226,115,90,0.18);
+  }
+  .map-card .open-link{
+    position:absolute;
+    left:20px; bottom:20px; right:20px;
+    background:rgba(255,253,250,0.90);
+    backdrop-filter:blur(6px);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:14px 16px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:15px;
+  }
+  .map-card .open-link:hover{border-color:var(--sea);}
+
+  /* ---------- CTA STRIP ---------- */
+  .cta-strip{
+    padding:70px 0;
+    text-align:center;
+  }
+  .cta-strip h2{font-size:clamp(26px,3.6vw,38px); margin-bottom:16px;}
+  .cta-strip p{color:var(--ivory-dim); margin-bottom:30px;}
+  .cta-strip .hero-ctas{justify-content:center;}
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    border-top:1px solid var(--line);
+    padding:32px 0;
+  }
+  .foot-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:16px;
+    font-size:15px;
+    color:var(--ivory-dim);
+  }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 860px){
+    .hero-inner{flex-direction: column;}
+    .hero-inner{grid-template-columns:1fr;}
+    .hero-visual{order:-1;}
+    .about-grid{grid-template-columns:1fr; gap:32px;}
+    .services-grid{grid-template-columns:1fr;}
+    .features-grid{grid-template-columns:repeat(2,1fr);}
+    .reviews-layout{grid-template-columns:1fr;}
+    .contact-grid{grid-template-columns:1fr;}
+    .nav-links{display:none;}
+  }
+  @media (min-width: 640px){
+    .phone-link{display:inline;}
+  }
+
+  :focus-visible{outline:2px solid var(--sea); outline-offset:3px;}
+  @media (prefers-reduced-motion: reduce){
+    *{transition:none !important; animation:none !important;}
+  }
+
+  /* larger typography version */
+  .brand{font-size:22px;}
+  .nav-links{font-size:16px;}
+  .btn{font-size:16px;padding:13px 26px;}
+  .service-card h3{font-size:22px;}
+  .price{font-size:20px;}
+  .award-chip b{font-size:24px;}
+  .review-card p{font-size:16px;}
+  footer{font-size:15px;}
+
+
+  /* fullscreen spacious layout */
+  .wrap{
+    max-width:1400px;
+    padding:0 50px;
+  }
+  .hero{
+    min-height:92vh;
+    display:flex;
+    align-items:center;
+    padding:80px 0 100px;
+  }
+  .hero-inner{
+    grid-template-columns:1.2fr 0.8fr;
+    gap:90px;
+  }
+  .hero-visual{
+    min-height:100px;
+  }
+  section{
+    padding:0px 0;
+  }
+  .section-head{
+    margin-bottom:70px;
+  }
+  .service-card{
+    padding:36px 34px 30px;
+    min-height:210px;
+  }
+  .features-grid{
+    gap:0;
+  }
+  .feature-item{
+    padding:40px 30px;
+  }
+  .review-card,
+  .rating-summary{
+    padding:36px;
+  }
+  footer{
+    padding:50px 0;
+  }
+
+  @media(max-width:860px){
+    .wrap{padding:0 24px;}
+    .hero{min-height:auto;}
+    .hero-inner{gap:40px;}
+    .hero-visual{min-height:350px;}
+    section{padding:70px 0;}
+  }
+
+
+/* PREMIUM DESKTOP SCALE */
+@media (min-width: 1000px){
+  :root{
+    --desktop-scale:1.15;
+  }
+
+  .wrap{
+    max-width:1540px;
+    padding-left:70px;
+    padding-right:70px;
+  }
+
+  body{
+    font-size:20px;
+  }
+
+  header{
+    padding-top:28px;
+    padding-bottom:28px;
+  }
+
+  .brand{
+    font-size:26px;
+  }
+
+  .nav-links{
+    font-size:18px;
+    gap:42px;
+  }
+
+  .hero{
+    min-height:96vh;
+    padding:100px 0 130px;
+  }
+
+  .hero-inner{
+    gap:120px;
+  }
+
+  h1{
+    font-size:clamp(56px,6vw,88px)!important;
+    line-height:1.02;
+  }
+
+  .hero p,
+  .lead{
+    font-size:22px!important;
+    line-height:1.6;
+    max-width:700px;
+  }
+
+  .btn{
+    font-size:20px;
+    padding:18px 36px;
+  }
+
+  section{
+    padding:100px 0;
+  }
+
+  .section-head h2{
+    font-size:clamp(42px,4vw,64px)!important;
+  }
+
+  .section-head p{
+    font-size:20px;
+  }
+
+  .services-grid,
+  .cards-grid{
+    gap:38px;
+  }
+
+  .service-card,
+  .card{
+    padding:45px;
+    border-radius:28px;
+    min-height:260px;
+  }
+
+  .service-card h3,
+  .card h3{
+    font-size:28px;
+  }
+
+  .service-card p,
+  .card p{
+    font-size:19px;
+    line-height:1.6;
+  }
+
+  .reviews{
+    gap:35px;
+  }
+
+  .review-card{
+    padding:45px;
+  }
+
+  footer{
+    padding:70px 0;
+    font-size:18px;
+  }
+}
+
+
+/* FINAL PREMIUM LASER STUDIO UPDATE */
+
+/* centered hero and smaller top gap */
+@media (min-width:1000px){
+  .hero{
+    min-height:88vh;
+    padding-top:35px;
+    padding-bottom:60px;
+    align-items:center;
+  }
+
+  header{
+    padding-bottom:10px;
+  }
+
+  .hero-inner{
+    align-items:center;
+  }
+}
+
+/* price cards */
+.price-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:24px;
+}
+
+.price-card{
+  background:#fffdfa;
+  border:1px solid #eadbc8;
+  border-radius:28px;
+  padding:32px;
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  box-shadow:0 18px 45px rgba(80,55,30,.08);
+}
+
+.price-card h3{
+  margin:0 0 10px;
+  font-size:24px;
+}
+
+.price-card p{
+  margin:0;
+  color:#7a6a5a;
+  font-size:17px;
+}
+
+.price-card strong{
+  color:#9a6b3f;
+  font-size:28px;
+  white-space:nowrap;
+}
+
+/* modern gallery */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  gap:24px;
+}
+
+.gallery-item{
+  overflow:hidden;
+  border-radius:30px;
+  min-height:280px;
+  background:#eadbc8;
+  position:relative;
+}
+
+.gallery-item:nth-child(1),
+.gallery-item:nth-child(4){
+  grid-column:span 7;
+  min-height:420px;
+}
+
+.gallery-item:nth-child(2),
+.gallery-item:nth-child(3),
+.gallery-item:nth-child(5){
+  grid-column:span 5;
+}
+
+.gallery-item img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:.5s ease;
+}
+
+.gallery-item:hover img{
+  transform:scale(1.06);
+}
+
+@media(max-width:900px){
+  .price-grid,.gallery{
+    grid-template-columns:1fr;
+  }
+  .gallery-item,
+  .gallery-item:nth-child(1),
+  .gallery-item:nth-child(2),
+  .gallery-item:nth-child(3),
+  .gallery-item:nth-child(4),
+  .gallery-item:nth-child(5){
+    grid-column:span 12;
+    min-height:260px;
+  }
+}
+
+</style>
+
+<style>
+.real-price-section,.real-gallery-section{padding:100px 0}
+.real-price-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.real-price-card{background:#fffdfa;border:1px solid #eadbc8;border-radius:26px;padding:30px;display:flex;justify-content:space-between;gap:20px;box-shadow:0 15px 35px rgba(80,55,30,.08)}
+.real-price-card h3{margin:0 0 8px;font-size:24px;color:#3b3027}
+.real-price-card p{margin:0;color:#7a6a5a;font-size:16px}
+.real-price-card b{font-size:26px;color:#a36a2a;white-space:nowrap}
+.real-gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:22px}
+.real-photo{background:#eadbc8;border-radius:28px;height:330px;display:flex;align-items:center;justify-content:center;color:#8a5a3b;font-size:22px;overflow:hidden}
+.real-photo.big{grid-column:span 7;height:460px}
+.real-photo.small{grid-column:span 5}
+@media(max-width:900px){.real-price-grid{grid-template-columns:1fr}.real-photo,.real-photo.big,.real-photo.small{grid-column:span 12;height:260px}}
+</style>
+
+
+<style>
+/* Services + gallery final redesign */
+.real-price-section{
+  padding:90px 0;
+}
+.real-price-section h2,
+.real-gallery-section h2{
+  font-size:clamp(36px,4vw,58px);
+  margin-bottom:50px;
+  color:#3b3027;
+}
+
+.real-price-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:26px;
+}
+
+.real-price-card{
+  display:block;
+  min-height:190px;
+  padding:34px;
+  position:relative;
+  transition:.3s;
+}
+
+.real-price-card:hover{
+  transform:translateY(-6px);
+}
+
+.real-price-card b{
+  display:block;
+  margin-top:24px;
+  font-size:30px;
+}
+
+.real-gallery-section{
+  padding:100px 0;
+}
+
+.real-gallery{
+  display:grid;
+  grid-template-columns:1.6fr 1fr 1fr;
+  grid-auto-rows:260px;
+  gap:22px;
+}
+
+.real-photo{
+  height:auto;
+  min-height:260px;
+  background:
+  linear-gradient(135deg,#efe1cf,#dfc7a8);
+  color:#7a5a3b;
+}
+
+.real-photo.big{
+  grid-row:span 2;
+  grid-column:auto;
+  height:auto;
+}
+
+.real-photo.small{
+  height:auto;
+}
+
+@media(max-width:1000px){
+ .real-price-grid{grid-template-columns:1fr 1fr;}
+}
+
+@media(max-width:700px){
+ .real-price-grid{grid-template-columns:1fr;}
+ .real-gallery{grid-template-columns:1fr;}
+}
+</style>
+
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand">Анна <span>Деденко</span></a>
+    <nav class="nav-links">
+      <a href="#about">О студии</a>
+      <a href="#services">Услуги</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:+79189939605" class="phone-link">+7 918 993-96-05</a>
+      <a href="https://wa.me/79189939605" class="btn btn-primary" target="_blank" rel="noopener">Записаться</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <div class="rating-badge">
+          <span class="stars">★★★★★</span>
+          <b>5.0</b> · 158 отзывов · «Хорошее место 2026»
+        </div>
+        <h1 class="headline">Гладкость,<br>за которой <em>возвращаются</em></h1>
+        <p class="lede">Студия и школа эпиляции в Анапе — лазер, шугаринг, воск и электроэпиляция. Бережно, по записи, с мастерами, которых рекомендуют.</p>
+        <div class="hero-ctas">
+          <a href="https://wa.me/79189939605" class="btn btn-primary" target="_blank" rel="noopener">Записаться в WhatsApp</a>
+          <a href="tel:+79189939605" class="btn btn-ghost">Позвонить: +7 918 993-96-05</a>
+        </div>
+        <div class="quick-facts">
+          <div><span class="dot"></span>Анапское шоссе, 32к5, этаж 1, пом. 18</div>
+          <div><span class="dot"></span>Ежедневно · до 20:00</div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img src=".//2222.webp" alt="">
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+      <div>
+        <span class="eyebrow">Студия и школа</span>
+        <h2 style="margin-top:14px; font-size:clamp(26px,3vw,34px);">Место, где учат и заботятся о коже</h2>
+      </div>
+      <div>
+        <p>Студия Анны Деденко в Анапе совмещает две вещи: эпиляцию для гостей и обучение техникам для будущих мастеров. Здесь работают с лазером, шугарингом, воском и электроэпиляцией — как для женщин, так и для мужчин.</p>
+        <p>В 2026 году студия получила отметку Яндекс Карт «Хорошее место» — её присваивают заведениям, которые особенно ценят гости. Рейтинг студии держится на 5.0 из 158 оценок.</p>
+        <div class="award-strip">
+          <div class="award-chip"><b>5.0</b>рейтинг на Яндекс Картах</div>
+          <div class="award-chip"><b>158</b>оценок гостей</div>
+          <div class="award-chip"><b>123</b>развёрнутых отзыва</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Услуги и цены</span>
+          <h2>Часть прайса — чтобы было от чего оттолкнуться</h2>
+        </div>
+      </div>
+
+  <section class="real-price-section">
+<div class="wrap">
+<div class="real-price-grid">
+  <div class="real-price-card">
+    <img src=".//orig.png" alt="">
+    <div><h3>Линия живота</h3>
+      <p>Гладкая кожа безопасно, эффективно и надолго</p>
+    </div>
+    <b>3000 ₽</b>
+  </div>
+  <div class="real-price-card">
+    <div>
+      <img src=".//orig (1).png" alt="">
+      <h3>Бикини</h3>
+      <p>Безопасно, эффективно, долгий эффект гладкой кожи</p>
+    </div>
+    <b>800 ₽</b>
+  </div>
+  <div class="real-price-card">
+    <div>
+      <img src=".//orig (2).png" alt="">
+      <h3>Шея</h3>
+      <p>Деликатно и стойко</p>
+    </div>
+    <b>1200 ₽</b>
+  </div>
+  <div class="real-price-card">
+    <div>
+      <img src=".//orig (3).png" alt="">
+      <h3>Декольте</h3>
+      <p>Эффективное удаление волос в зоне декольте</p>
+    </div>
+    <b>1200 ₽</b>
+  </div>
+  <div class="real-price-card"><div>
+    <img src=".//orig (4).png" alt="">
+    <h3>Подмышки</h3
+      ><p>Быстро и с длительным эффектом</p>
+    </div>
+    <b>1200 ₽</b>
+  </div>
+  <div class="real-price-card">
+    <div>
+      <img src=".//orig (5).png" alt="">
+      <h3>Руки</h3>
+      <p>Полная эпиляция рук</p>
+    </div>
+    <b>3200 ₽</b>
+  </div>
+  <div class="real-price-card">
+    <div>
+      <img src=".//orig (7).png" alt="">
+      <h3>Глубокое бикини</h3>
+      <p>Гладкая кожа надолго</p>
+    </div>
+    <b>3000 ₽</b>
+  </div>
+  <div class="real-price-card">
+    <div>
+      <img src=".//1.png" alt="">
+      <h3>Ноги (полная)</h3>
+      <p>Полная лазерная эпиляция ног</p>
+    </div>
+    <b>4900 ₽</b>
+  </div>
+  <div class="real-price-card">
+    <div>
+      <img src=".//orig (8).png" alt="">
+      <h3>Депиляция лица</h3>
+      <p>Аккуратное удаление волос</p>
+    </div>
+    <b>1500 ₽</b>
+  </div>
+  <div class="real-price-card">
+    <div>
+      <img src=".//orig (9).png" alt="">
+      <h3>Депиляция бикини</h3>
+      <p>Гладкость и комфорт</p>
+    </div>
+    <b>1200 ₽</b>
+  </div>
+  <div class="real-price-card">
+    <div>
+      <img src=".//orig (10).png" alt="">
+      <h3>Депиляция ног</h3>
+      <p>Эффективная процедура</p>
+    </div>
+    <b>2200 ₽</b>
+  </div>
+  <div class="real-price-card">
+    <div>
+      <img src=".//orig (11).png" alt="">
+      <h3>Мужская депиляция бороды</h3>
+      <p>Чистая кожа без раздражения</p>
+    </div>
+    <b>2000 ₽</b>
+  </div>
+</div>
+</div>
+</section>
+
+      <p class="services-note">Также в студии: лазерная эпиляция, депиляция лица, мужская депиляция и мужская косметология. <a href="https://wa.me/79189939605" target="_blank" rel="noopener">Уточнить цену и записаться →</a></p>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Условия</span>
+          <h2>Комфорт, о котором не нужно спрашивать</h2>
+        </div>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="6" width="18" height="14" rx="2"/><path d="M7 6V4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/></svg>
+          <span>Онлайн-запись и предварительная бронь</span>
+        </div>
+        <div class="feature-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 13a10 10 0 0 1 14 0"/><path d="M8.5 16.5a5 5 0 0 1 7 0"/><circle cx="12" cy="20" r="1"/></svg>
+          <span>Wi-Fi для гостей</span>
+        </div>
+        <div class="feature-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 4v16M3 9h4"/></svg>
+          <span>Парковка у входа, есть места для маломобильных</span>
+        </div>
+        <div class="feature-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12a8 8 0 1 1 16 0 8 8 0 0 1-16 0Z"/><path d="M9 12h6"/></svg>
+          <span>Полная доступная среда</span>
+        </div>
+        <div class="feature-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M3 10h18M8 15h4"/></svg>
+          <span>Оплата картой, СБП, наличными</span>
+        </div>
+        <div class="feature-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 12v7a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7"/><path d="M2 7h20v5H2zM12 7v13M12 7a3 3 0 1 1 3-3M12 7a3 3 0 1 0-3-3"/></svg>
+          <span>Подарочный сертификат</span>
+        </div>
+        <div class="feature-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+          <span>Мужская косметология и депиляция</span>
+        </div>
+        <div class="feature-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+          <span>Кнопка вызова персонала</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Отзывы гостей</span>
+          <h2>Что говорят те, кто уже был</h2>
+        </div>
+      </div>
+
+      <div class="reviews-layout">
+        <div class="rating-summary">
+          <div class="big">5.0</div>
+          <div class="stars">★★★★★</div>
+          <div class="count">на основе 158 оценок · 123 отзыва</div>
+
+          <div class="bar-row">
+            <div class="labels"><span>Персонал</span><span>98%</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:98%"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="labels"><span>Эпиляция</span><span>98%</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:98%"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="labels"><span>Атмосфера</span><span>100%</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:100%"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="labels"><span>Чистота</span><span>100%</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:100%"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="labels"><span>Время ожидания</span><span>94%</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:94%"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="labels"><span>Шугаринг</span><span>100%</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:100%"></div></div>
+          </div>
+        </div>
+
+        <div class="review-cards">
+          <div class="review-card">
+            <div class="review-head">
+              <div class="who"><span class="avatar">А</span>Алёна Ш.</div>
+              <span class="date">10 июня</span>
+            </div>
+            <p>Пришла на шугаринг впервые и сильно волновалась. Мастер Джамиля сняла напряжение с первых минут: работает аккуратно, почти без дискомфорта, и с ней легко разговаривать. Теперь только к ней.</p>
+            <span class="review-tag">Шугаринг</span>
+          </div>
+          <div class="review-card">
+            <div class="review-head">
+              <div class="who"><span class="avatar">А</span>Ангелина</div>
+              <span class="date">13 марта</span>
+            </div>
+            <p>Начинала с лазерной эпиляции, потом попробовала лазерное омоложение лица у Екатерины. После курса из 5 процедур кожа стала заметно ровнее и подтянутее. В студии тёплая атмосфера, девочки всегда на связи.</p>
+            <span class="review-tag">Лазер · Уход</span>
+          </div>
+          <div class="review-card">
+            <div class="review-head">
+              <div class="who"><span class="avatar">Л</span>Лера</div>
+              <span class="date">11 февраля</span>
+            </div>
+            <p>Лучшая студия в городе. У Екатерины на лазерной эпиляции чувствуется большой опыт — каждый шаг объясняет понятно, без лишнего маркетинга. Хожу уже в третий раз, результат и забота на высоте.</p>
+            <span class="review-tag">Лазерная эпиляция</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    background:#f8f1e8;
+    font-family:Arial, sans-serif;
+}
+.gallery-box{
+
+    max-width:1200px;
+    margin:0px auto;
+
+}
+.gallery-header{
+
+    text-align:center;
+    margin-bottom:50px;
+
+}
+.gallery-header h2{
+
+    font-size:55px;
+    font-family:Georgia,serif;
+    font-weight:400;
+    color:#3d3025;
+
+}
+.gallery-header p{
+
+    max-width:500px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.6;
+    color:#76685c;
+
+}
+.slider{
+
+    position:relative;
+    overflow:hidden;
+
+}
+.slider-line{
+
+    display:flex;
+    gap:25px;
+    transition:0.5s;
+
+}
+.slide{
+
+    min-width:280px;
+    height:380px;
+    border-radius:25px;
+    overflow:hidden;
+
+}
+.slide img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+}
+.buttons{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    margin-top:40px;
+
+}
+.buttons button{
+
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    border:1px solid #c49b63;
+    background:white;
+    font-size:25px;
+    cursor:pointer;
+
+}
+#count{
+
+    font-size:22px;
+    color:#4b3929;
+
+}
+@media(max-width:700px){
+
+.gallery-box{
+    padding:20px;
+}
+
+
+.gallery-header h2{
+
+    font-size:38px;
+
+}
+
+
+.slide{
+
+    min-width:90%;
+    height:400px;
+
+}
+
+}
+</style>
+</head>
+<body>
+<section class="gallery-box">
+<div class="gallery-header">
+<h2>Фотогалерея</h2>
+<p>
+Атмосфера нашей студии, профессиональный уход
+и комфорт во время процедур.
+</p>
+</div>
+<div class="slider">
+<div class="slider-line" id="line">
+
+
+<div class="slide">
+<img src=".//Новая папка/1.webp">
+</div>
+
+
+<div class="slide">
+<img src=".//Новая папка/2.webp">
+</div>
+
+
+<div class="slide">
+<img src=".//Новая папка/3.webp">
+</div>
+
+
+<div class="slide">
+<img src=".//Новая папка/6.webp">
+</div>
+
+
+<div class="slide">
+<img src=".//Новая папка/9.webp">
+</div>
+
+
+<div class="slide">
+<img src=".//Новая папка/4.webp">
+</div>
+
+
+</div>
+</div>
+<div class="buttons">
+<button onclick="prev()">←</button>
+<span id="count">
+1 / 3
+</span>
+<button onclick="next()">→</button>
+</div>
+</section>
+<script>
+
+
+let line=document.getElementById("line");
+
+let slides=document.querySelectorAll(".slide");
+
+let count=document.getElementById("count");
+
+
+let index=0;
+
+
+function visible(){
+
+if(window.innerWidth<700){
+return 1;
+}
+
+return 4;
+
+}
+
+
+
+function update(){
+
+let width=slides[0].offsetWidth+25;
+
+
+line.style.transform=
+`translateX(-${index*width}px)`;
+
+
+count.innerHTML=
+`${index+1} / ${slides.length-visible()+1}`;
+
+}
+
+
+
+function next(){
+
+if(index < slides.length-visible()){
+
+index++;
+
+}
+
+update();
+
+}
+
+
+
+function prev(){
+
+if(index>0){
+
+index--;
+
+}
+
+update();
+
+}
+
+
+
+window.addEventListener("resize",update);
+
+
+update();
+
+
+
+</script>
+
+
+</body>
+</html>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <span class="eyebrow">Контакты</span>
+        <h2 style="margin-top:14px; font-size:clamp(26px,3vw,34px); margin-bottom:28px;">Ждём вас в Анапе</h2>
+
+        <ul class="contact-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><span class="label">Адрес</span>Анапа, Анапское шоссе, 32к5, этаж 1, помещение 18</div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z"/></svg>
+            <div><span class="label">Телефон</span><a href="tel:+79189939605">+7 (918) 993-96-05</a></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <div><span class="label">Режим работы</span>Ежедневно, до 20:00 — точное время уточняйте по телефону</div>
+          </li>
+        </ul>
+
+        <span class="label" style="display:block; margin-bottom:10px; color:var(--ivory-dim); font-size:14px; text-transform:uppercase; letter-spacing:0.06em;">Мы в мессенджерах и соцсетях</span>
+        <div class="social-row">
+          <a href="https://wa.me/79189939605" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 20l1.1-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+          </a>
+          <a href="https://t.me/Anna_Dedenko" target="_blank" rel="noopener" aria-label="Telegram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m22 2-20 8 6 2 2 6 4-4 6 4Z"/></svg>
+          </a>
+          <a href="https://vk.com/studiya_anna.dedenko" target="_blank" rel="noopener" aria-label="VK">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h4c0 6 3 9 5 9V4h4v6c2 0 4-2 5-6h4c-1 4-3 6-5 7 2 1 4 3 5 7h-4c-1-3-3-5-5-6v6h-4c-2 0-9-1-9-13Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="map-card">
+        <svg viewBox="0 0 400 320" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+              <path d="M34 0H0V34" fill="none" stroke="rgba(243,236,225,0.06)" stroke-width="1"/>
+            </pattern>
+          </defs>
+          <rect width="400" height="320" fill="url(#grid)"/>
+          <path d="M0,80 C100,40 150,120 250,90 C320,70 360,110 400,90" fill="none" stroke="#A98255" stroke-width="1.5" opacity="0.5"/>
+          <path d="M0,220 C120,260 200,190 300,230 C340,246 370,220 400,230" fill="none" stroke="#B8844F" stroke-width="1.5" opacity="0.4"/>
+        </svg>
+        <div class="pin"><div class="dot"></div></div>
+        <a class="open-link" href="https://yandex.ru/maps/org/shkola_studiya_epilyatsii_anny_dedenko/44567675798" target="_blank" rel="noopener">
+          <span>Открыть на Яндекс Картах</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section class="cta-strip">
+    <div class="wrap">
+      <h2>Готовы записаться?</h2>
+      <p>Ответим в WhatsApp за пару минут или примем звонок в рабочее время.</p>
+      <div class="hero-ctas">
+        <a href="https://wa.me/79189939605" class="btn btn-primary" target="_blank" rel="noopener">Записаться в WhatsApp</a>
+        <a href="tel:+79189939605" class="btn btn-ghost">+7 918 993-96-05</a>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+<footer>
+  <div class="wrap foot-row">
+    <span>© 2026 Студия эпиляции Анны Деденко · Анапа</span>
+    <span>Анапское шоссе, 32к5 · +7 (918) 993-96-05</span>
+  </div>
+</footer>
+
+
+</body>
+</html>
